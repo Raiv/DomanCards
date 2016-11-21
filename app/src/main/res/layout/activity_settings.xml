@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/bChooseDir"
+        android:inputType="textPersonName"
+        android:hint="@string/as_choose_dir"
+        android:ems="10"
+        android:id="@+id/etDir">
+
+        </EditText>
+    <Button android:id="@+id/bChooseDir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:minWidth="40dp"
+            android:minHeight="40dp"
+            android:text="..."
+            android:layout_marginLeft="8dp"
+        />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/randomize_cards"
+        android:layout_below="@+id/bChooseDir"
+        android:id="@+id/cbRandom"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_duration"
+        android:layout_below="@+id/cbRandom"
+        android:id="@+id/tvSelectDuration"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tvSelectDuration"
+        android:layout_height="wrap_content"
+        android:id="@+id/sbDuration"
+        android:max="295"
+        android:layout_toLeftOf="@+id/tvSeekBarValue"
+        />
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:layout_below="@+id/tvSelectDuration"
+        android:layout_alignParentRight="true"
+        android:id="@+id/tvSeekBarValue"/>
+
+
+
+</RelativeLayout>
